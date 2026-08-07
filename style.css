@@ -102,6 +102,14 @@ img{
     width: 150px;
     height: 40px;
 }
+.global-menu__header-buttons,
+.global-menu__center-logo{
+    display: none;
+}
+.global-menu__content,
+.global-menu__panel{
+    display: contents;
+}
 .global-menu__close{
     position: relative;
     width: 32px;
@@ -991,25 +999,103 @@ body.is-menu-open{
         padding: 0 40px;
     }
     .global-menu__header{
-        height: 120px;
+        align-items: center;
+        height: 90px;
         padding-top: 20px;
     }
     .global-menu__logo{
         width: 250px;
         height: 61px;
     }
+    .global-menu__header-buttons{
+        display: flex;
+        gap: 22px;
+        margin-right: 42px;
+        margin-left: auto;
+    }
+    .global-menu__header-buttons a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 126px;
+        height: 42px;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .global-menu__header-buttons a:first-child{
+        background-color: #222222;
+    }
+    .global-menu__header-buttons a:last-child{
+        background-color: #AFA86F;
+        font-family: Viga, sans-serif;
+        font-weight: 400;
+    }
+    .global-menu__close{
+        width: 42px;
+        height: 52px;
+    }
+    .global-menu__close span{
+        top: 25px;
+        width: 42px;
+    }
+    .global-menu__content{
+        position: absolute;
+        top: 208px;
+        right: 131px;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        align-items: center;
+        column-gap: 63px;
+        width: 903px;
+        margin: 0;
+    }
+    .global-menu__center-logo{
+        display: block;
+        width: 250px;
+        height: 61px;
+    }
+    .global-menu__panel{
+        display: block;
+        padding-left: 63px;
+        border-left: 1px solid #AFA86F;
+    }
     .global-menu__nav{
-        max-width: 900px;
-        margin: 0 auto;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(3, 105px);
+        grid-template-columns: repeat(2, 248px);
+        column-gap: 30px;
+        width: 526px;
+        max-width: none;
+        margin: 0;
     }
     .global-menu__nav a{
-        height: 78px;
+        justify-content: flex-start;
+        height: 105px;
+        padding: 23px 0;
+    }
+    .global-menu__nav span{
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .global-menu__nav small{
+        margin-top: 11px;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .global-menu__nav a:nth-child(3),
+    .global-menu__nav a:last-child{
+        border-bottom: 1px solid #AFA86F;
     }
     .global-menu__buttons{
         flex-direction: row;
-        width: 518px;
-        margin: 52px auto 0;
-        gap: 22px;
+        width: 526px;
+        margin: 48px 0 0;
+        gap: 30px;
+    }
+    .global-menu__buttons a{
+        width: 248px;
     }
     .mv__copy{
         top: 286px;
