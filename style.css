@@ -69,6 +69,7 @@ img{
     background: transparent;
     cursor: pointer;
 }
+/*ドロワーメニューのCSS　ここから*/
 .global-menu{
     position: fixed;
     top: 0;
@@ -142,7 +143,7 @@ img{
 }
 .global-menu__nav small{
     width: auto;
-    margin-top: 7px;
+    margin-top: 9px;
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
@@ -173,6 +174,8 @@ img{
     font-family: Viga, sans-serif;
     font-weight: 400;
 }
+/*ドロワーメニューのCSS　ここまで*/
+
 body.is-menu-open{
     overflow: hidden;
 }
