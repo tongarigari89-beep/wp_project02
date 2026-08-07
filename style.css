@@ -898,6 +898,43 @@ body.is-menu-open{
     text-align: center;
     white-space: nowrap;
 }
+
+/* 小さいSP画面で固定幅による崩れを防ぐ */
+@media (max-width: 767px){
+    .career__txt--first img{
+        left: 50%;
+        width: calc(100% - 21px);
+        height: auto;
+        transform: translateX(-50%);
+    }
+    .blog__list,
+    .blog__item{
+        width: 100%;
+    }
+    .blog__item{
+        height: auto;
+        min-height: 121px;
+    }
+    .blog__item>img{
+        height: auto;
+        min-height: 121px;
+        align-self: stretch;
+    }
+    .blog__cont{
+        flex: 1;
+        min-width: 0;
+        width: auto;
+        height: auto;
+        min-height: 108px;
+        margin: 6px 7px 7px 0;
+    }
+}
+
+@media (max-width: 350px){
+    .career__txt{
+        font-size: 16px;
+    }
+}
 /* SPここまで */
 
 /* PCここから */
