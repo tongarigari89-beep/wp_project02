@@ -1,0 +1,45 @@
+.about-hero{height:339px;margin-top:118px;background:url("./img/Hero.jpg") center/cover no-repeat}
+.about-hero__inner{width:1024px;height:338px;margin:0 auto;padding:74px 24px}
+.about-hero h1{display:table;padding:3px 10px;background:#fff;font-family:Viga,sans-serif;font-size:64px;font-weight:400;line-height:64px}
+.about-hero__ja{display:table;margin-top:18px;padding:3px 10px;background:#fff;font-size:24px;font-weight:700;line-height:24px}
+.about-hero__lead{display:table;margin-top:18px;padding:7px 10px;background:#fff;font-size:16px;font-weight:700;line-height:16px}
+.breadcrumb{height:54px;background:#f0f0f0}
+.breadcrumb ol{display:flex;align-items:center;gap:4px;width:976px;height:54px;margin:0 auto;font-size:14px}
+.about-main{width:1024px;min-height:4752px;margin:0 auto;padding-top:56px}
+.about-heading{display:table;padding:10px;font-size:32px;font-weight:700;line-height:32px}
+
+.values{width:980px;height:1273px;margin:0 auto}
+.values>.about-heading{margin:0 auto}
+.values__list{display:flex;flex-direction:column;gap:35px;margin-top:76px}
+.values__item{height:201px;padding:30px 80px;border-radius:10px;background:#FAF7F1}
+.values__title{display:flex;align-items:center;gap:21px;height:48px}
+.values__number{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:50%;background:#222;color:#fff;font-family:Viga,sans-serif;font-size:18px}
+.values__title h3{font-size:20px;font-weight:700}
+.values__item>p{width:820px;margin-top:21px;font-size:16px;line-height:1.5}
+
+.message{width:980px;height:858px;margin:119px auto 0}
+.message>.about-heading{margin:0 auto}
+.message__content{position:relative;display:grid;grid-template-columns:484px 1fr;width:980px;height:707px;margin-top:99px}
+.message__photo{width:484px;height:629px;object-fit:cover}
+.message__body{position:relative;width:559px;height:689px;margin-top:18px;margin-left:-63px;padding:188px 0 0 80px;background:#fff}
+.message__catch{position:absolute;top:0;left:0;width:448px;font-size:36px;font-weight:700;line-height:1.35}
+.message__text{width:479px;font-size:16px;line-height:2}
+.message__text p+p{margin-top:31px}
+.message__signature{margin-top:18px;font-size:16px;font-weight:700;text-align:right}
+
+.business{width:1024px;height:1215px;margin-top:119px}
+.business__intro{width:701px;margin-top:24px;font-size:16px;line-height:1.5}
+.business__list{display:flex;flex-direction:column;gap:49px;margin-top:72px}
+.business__item{display:grid;grid-template-columns:462px 1fr;column-gap:42px;min-height:261px;padding-left:22px}
+.business__item+.business__item{padding-top:49px;border-top:1px solid #AFA86F}
+.business__item img{width:462px;height:264px;object-fit:cover}
+.business__content{padding-top:26px}
+.business__content h3{font-size:32px;line-height:32px}
+.business__catch{margin-top:40px;font-size:24px;font-weight:700;line-height:1.5}
+.business__description{margin-top:32px;font-size:16px;line-height:1.5}
+
+.company{width:990px;height:855px;margin:119px 0 0 17px}
+.company__list{width:980px;margin:103px 0 0 10px}
+.company__row{display:grid;grid-template-columns:231px 1fr;align-items:start;min-height:88px;padding:18px 0;border-bottom:1px solid #AFA86F;font-size:16px;line-height:1.5}
+.company__row:first-child{min-height:52px;padding-top:0}
+.company__row dt{font-weight:700}
