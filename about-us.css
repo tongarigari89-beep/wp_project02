@@ -37,20 +37,6 @@
     font-weight: 700;
     line-height: 16px;
 }
-.breadcrumb{
-    height: 54px;
-    background: #F0F0F0;
-}
-.breadcrumb ol{
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    width: 976px;
-    height: 54px;
-    margin: 0 auto;
-    list-style: none;
-    font-size: 14px;
-}
 .about-main{
     width: 1024px;
     margin: 0 auto;

@@ -1,0 +1,114 @@
+.staff-hero{
+    height: 339px;
+    margin-top: 118px;
+}
+.staff-hero__inner{
+    position: relative;
+    width: 100%;
+    height: 339px;
+    background: url("./img/Hero_staff.jpg") center/cover no-repeat;
+}
+.staff-hero__content{
+    position: absolute;
+    top: 75px;
+    left: max(24px,calc((100% - 976px)/2));
+    width: 322px;
+    height: 166px;
+}
+.staff-hero h1{
+    display: table;
+    height: 70px;
+    padding: 3px 10px;
+    background: #FFFFFF;
+    font-family: Viga,sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+}
+.staff-hero__ja{
+    display: table;
+    height: 30px;
+    margin-top: 18px;
+    padding: 3px 10px;
+    background: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.staff-hero__lead{
+    display: table;
+    height: 30px;
+    margin-top: 18px;
+    padding: 7px 10px;
+    background: #FFFFFF;
+    color: #988C2C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+.staff-main{
+    width: 986px;
+    margin: 0 auto;
+    padding: 130px 0 139px;
+}
+.staff-list{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    column-gap: 43px;
+    row-gap: 48px;
+    width: 986px;
+}
+.staff-card{
+    width: 300px;
+    height: 469px;
+    font-weight: 700;
+}
+.staff-card__visual{
+    position: relative;
+    width: 300px;
+    height: 397px;
+}
+.staff-card__visual>img{
+    width: 300px;
+    height: 379px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.staff-card__visual>p{
+    position: absolute;
+    top: 331px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.staff-card__visual>p span{
+    display: inline-block;
+    min-height: 30px;
+    padding: 5px 7px;
+    background: #AFA86F;
+    white-space: nowrap;
+}
+.staff-card__profile{
+    margin-top: 16px;
+}
+.staff-card__profile p{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    height: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.staff-card__profile h2{
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
