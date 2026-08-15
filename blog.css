@@ -1,0 +1,136 @@
+.blog-hero{
+    height: 339px;
+    margin-top: 118px;
+}
+.blog-hero__inner{
+    position: relative;
+    width: 100%;
+    height: 339px;
+    background: url("./img/Hero__blog.jpg") center/cover no-repeat;
+}
+.blog-hero__content{
+    position: absolute;
+    top: 75px;
+    left: max(24px,calc((100% - 976px)/2));
+}
+.blog-hero h1{
+    display: table;
+    height: 70px;
+    padding: 3px 10px;
+    background: #FFFFFF;
+    font-family: Viga,sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+}
+.blog-hero__ja{
+    display: table;
+    height: 30px;
+    margin-top: 18px;
+    padding: 3px 10px;
+    background: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.blog-hero__lead{
+    display: table;
+    height: 30px;
+    margin-top: 18px;
+    padding: 7px 10px;
+    background: #FFFFFF;
+    color: #988C2C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+.blog-main{
+    padding: 130px 0 139px;
+    background: #FFFFFF;
+}
+.blog-list{
+    display: grid;
+    grid-template-columns: repeat(2,466px);
+    gap: 24px;
+    width: 956px;
+    margin: 0 auto;
+}
+.blog-card{
+    width: 466px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #FAF7F1;
+}
+.blog-card.is-hidden{
+    display: none;
+}
+.blog-card>a{
+    display: flex;
+    gap: 22px;
+    width: 100%;
+    height: 100%;
+}
+.blog-card>a>img{
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+.blog-card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 248px;
+    height: 150px;
+    margin-top: 15px;
+    padding-right: 16px;
+}
+.blog-card__category{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    line-height: 18px;
+}
+.blog-card__category img{
+    width: 16px;
+    height: 18px;
+    flex-shrink: 0;
+}
+.blog-card h2{
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.blog-card time{
+    font-size: 12px;
+    line-height: 1;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 64px;
+}
+.pagination__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #222222;
+    border-radius: 50%;
+    background: transparent;
+    color: #222222;
+    font-family: Viga,sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
+.pagination__button.is-current{
+    background: #222222;
+    color: #FFFFFF;
+}

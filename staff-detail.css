@@ -1,0 +1,281 @@
+.staff-detail{
+    margin-top: 118px;
+}
+.staff-profile{
+    padding: 43px 0 43px;
+    background: #FAF7F1;
+}
+.staff-profile__inner{
+    display: grid;
+    grid-template-columns: 605px 286px;
+    justify-content: space-between;
+    width: 976px;
+    height: 368px;
+    margin: 0 auto;
+}
+.staff-profile__content{
+    width: 605px;
+    height: 299px;
+    margin-top: 35px;
+}
+.staff-profile__message{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    height: 90px;
+    font-weight: 700;
+}
+.staff-profile__message span{
+    display: inline-block;
+    background: #FFFFFF;
+    white-space: nowrap;
+}
+.staff-profile__message span:first-child{
+    height: 42px;
+    padding: 3px 10px;
+    font-size: 36px;
+    line-height: 36px;
+}
+.staff-profile__message span:last-child{
+    height: 30px;
+    padding: 3px 14px;
+    font-size: 24px;
+    line-height: 24px;
+}
+.staff-profile__information{
+    width: 182px;
+    height: 50px;
+    margin-top: 30px;
+}
+.staff-profile__position{
+    color: #988C2C;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+}
+.staff-profile__identity{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 182px;
+    height: 24px;
+    margin-top: 12px;
+    white-space: nowrap;
+}
+.staff-profile__identity h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.staff-profile__identity p{
+    font-size: 16px;
+    line-height: 16px;
+}
+.staff-profile__biography{
+    width: 605px;
+    height: 116px;
+    margin-top: 13px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.staff-profile__photo{
+    width: 286px;
+    height: 368px;
+}
+.staff-profile__photo img{
+    width: 286px;
+    height: 368px;
+    object-fit: cover;
+}
+.staff-detail__content{
+    padding-top: 101px;
+    padding-bottom: 139px;
+}
+.staff-interview{
+    display: grid;
+    grid-template-columns: 942px 210px;
+    column-gap: 56px;
+    width: 1208px;
+    height: 1945px;
+}
+.staff-interview__article{
+    width: 942px;
+    height: 1945px;
+}
+.staff-interview__section{
+    position: relative;
+    width: 942px;
+    scroll-margin-top: 150px;
+}
+.staff-interview__section::before{
+    position: absolute;
+    top: 12px;
+    left: 216px;
+    width: 216px;
+    height: 1px;
+    background: #AFA86F;
+    content: "";
+    transform: translateX(-100%);
+}
+.staff-interview__section-inner{
+    width: 696px;
+    margin-left: 232px;
+}
+.staff-interview__section h2{
+    height: 24px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.staff-interview__intro,
+.staff-interview__answer{
+    margin-top: 50px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.staff-interview__section--work{
+    height: 561px;
+}
+.staff-interview__section--work .staff-interview__section-inner{
+    width: 710px;
+}
+.staff-interview__duties{
+    margin-top: 23px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.staff-interview__duties p+p{
+    margin-top: 29px;
+}
+.staff-interview__duties strong{
+    font-weight: 700;
+}
+.staff-interview__section--student{
+    height: 393px;
+    margin-top: 23px;
+}
+.staff-interview__section--reason{
+    height: 248px;
+    margin-top: 23px;
+}
+.staff-interview__section--reward{
+    height: 277px;
+    margin-top: 23px;
+}
+.staff-interview__section--person{
+    height: 161px;
+    margin-top: 23px;
+}
+.staff-interview__section--message{
+    height: 190px;
+    margin-top: 23px;
+}
+.staff-interview__sidebar{
+    position: relative;
+    width: 210px;
+    height: 1945px;
+}
+.interview-toc{
+    position: sticky;
+    top: 148px;
+    width: 210px;
+}
+.interview-toc__title{
+    height: 21px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.interview-toc__list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 13px;
+}
+.interview-toc__list a{
+    display: block;
+    height: 21px;
+    color: #999999;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+.interview-toc__list a.is-active{
+    color: #222222;
+}
+.related-staff{
+    width: 986px;
+    height: 577px;
+    margin: 107px auto 0;
+}
+.related-staff>h2{
+    height: 58px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.8;
+}
+.related-staff__list{
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    column-gap: 43px;
+    width: 986px;
+    height: 469px;
+    margin-top: 50px;
+}
+.related-staff__card{
+    width: 300px;
+    height: 469px;
+    font-weight: 700;
+}
+.related-staff__visual{
+    position: relative;
+    width: 300px;
+    height: 397px;
+}
+.related-staff__visual>img{
+    width: 300px;
+    height: 379px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+.related-staff__visual>p{
+    position: absolute;
+    top: 331px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.related-staff__visual>p span{
+    display: inline-block;
+    min-height: 30px;
+    padding: 5px 7px;
+    background: #AFA86F;
+    white-space: nowrap;
+}
+.related-staff__profile{
+    margin-top: 16px;
+}
+.related-staff__profile p{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    height: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+    white-space: nowrap;
+}
+.related-staff__profile h3{
+    margin-top: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
