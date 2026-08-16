@@ -50,13 +50,13 @@
 }
 .blog-list{
     display: grid;
-    grid-template-columns: repeat(2,466px);
-    gap: 24px;
+    grid-template-columns: repeat(2,452px);
+    gap: 23px 52px;
     width: 956px;
     margin: 0 auto;
 }
 .blog-card{
-    width: 466px;
+    width: 452px;
     height: 180px;
     overflow: hidden;
     border-radius: 10px;
@@ -67,12 +67,12 @@
 }
 .blog-card>a{
     display: flex;
-    gap: 22px;
+    gap: 23px;
     width: 100%;
     height: 100%;
 }
 .blog-card>a>img{
-    width: 180px;
+    width: 156px;
     height: 180px;
     flex-shrink: 0;
     object-fit: cover;
@@ -81,10 +81,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 248px;
-    height: 150px;
-    margin-top: 15px;
-    padding-right: 16px;
+    width: 250px;
+    height: 140px;
+    margin-top: 20px;
+    /*padding-right: 16px;*/
 }
 .blog-card__category{
     display: flex;
@@ -99,7 +99,7 @@
     flex-shrink: 0;
 }
 .blog-card h2{
-    margin-top: 16px;
+    margin-top: 23px;
     font-size: 18px;
     font-weight: 700;
     line-height: 1.5;
@@ -113,15 +113,15 @@
 .pagination{
     display: flex;
     justify-content: center;
-    gap: 20px;
-    margin-top: 64px;
+    gap: 32px;
+    margin-top: 98px;
 }
 .pagination__button{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 58px;
+    height: 58px;
     border: 1px solid #222222;
     border-radius: 50%;
     background: transparent;
