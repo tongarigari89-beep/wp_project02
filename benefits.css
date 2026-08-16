@@ -1,0 +1,132 @@
+.benefits-hero{
+    height: 339px;
+    margin-top: 118px;
+}
+.benefits-hero__inner{
+    position: relative;
+    width: 100%;
+    height: 339px;
+    background: url("./img/hero__benefits.jpg") center/cover no-repeat;
+}
+.benefits-hero__content{
+    position: absolute;
+    top: 75px;
+    left: max(24px,calc((100% - 956px)/2));
+}
+.benefits-hero h1{
+    display: table;
+    height: 70px;
+    padding: 3px 10px;
+    background: #FFFFFF;
+    font-family: Viga,sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+}
+.benefits-hero__ja{
+    display: table;
+    height: 30px;
+    margin-top: 18px;
+    padding: 3px 10px;
+    background: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.benefits-hero__lead{
+    display: table;
+    height: 30px;
+    margin-top: 18px;
+    padding: 7px 10px;
+    background: #FFFFFF;
+    color: #988C2C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+.benefits-main{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 145px 22px 139px;
+    border-radius: 10px;
+    background: #FFFFFF;
+}
+.benefits-system,
+.benefits-voices{
+    width: 980px;
+}
+.benefits-system h2,
+.benefits-voices h2{
+    height: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.benefits-system__list{
+    width: 980px;
+    margin-top: 113px;
+}
+.benefits-system__row{
+    display: grid;
+    grid-template-columns: 231px 1fr;
+    width: 980px;
+    padding: 36px 0;
+    border-bottom: 1px solid #222222;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.benefits-system__row:first-child{
+    height: 132px;
+    padding-top: 0;
+}
+.benefits-system__row:nth-child(2),
+.benefits-system__row:nth-child(3){
+    height: 88px;
+    line-height: 16px;
+}
+.benefits-system__row:nth-child(4){
+    height: 120px;
+}
+.benefits-system__row:nth-child(5){
+    height: 240px;
+}
+.benefits-system__row dt{
+    font-weight: 700;
+}
+.benefits-voices{
+    margin-top: 128px;
+}
+.benefits-voices__list{
+    display: grid;
+    grid-template-columns: repeat(2,467px);
+    column-gap: 46px;
+    width: 980px;
+    margin-top: 23px;
+}
+.benefits-voice{
+    width: 467px;
+    height: 281px;
+}
+.benefits-voice__year{
+    color: #988C2C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+.benefits-voice h3{
+    margin-top: 13px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.benefits-voice__text{
+    margin-top: 25px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.benefits-voices__image{
+    width: 980px;
+    height: 560px;
+    margin-top: 36px;
+    object-fit: cover;
+}
