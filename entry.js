@@ -23,4 +23,11 @@ if (entryForm) {
 
     entryForm.addEventListener("input", updateSubmitButton);
     entryForm.addEventListener("change", updateSubmitButton);
+    entryForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        if (entryForm.checkValidity()) {
+            window.location.href = "./entry-thanks.html";
+        }
+    });
 }
