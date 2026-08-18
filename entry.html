@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTRY | TETOTE RECRUITING</title>
+    <meta name="description" content="TETOTEの採用エントリーフォームです。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Noto+Sans+JP:wght@400;700&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="entry.css">
+</head>
+<body>
+    <header class="sub-header">
+        <div class="sub-header__inner">
+            <a class="sub-header__logo" href="./index.html"><img src="./img/footer__logo.svg" alt="TETOTE RECRUITING"></a>
+            <div class="sub-header__actions">
+                <a class="sub-header__requirements" href="./details.html">募集要項</a>
+                <a class="sub-header__entry" href="./entry.html">ENTRY</a>
+                <button class="hamburger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="global-menu"><img src="./img/hamburger__menu.svg" alt=""></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="global-menu" id="global-menu" aria-hidden="true">
+        <div class="global-menu__header">
+            <a href="./index.html" aria-label="トップページへ戻る"><img class="global-menu__logo" src="./img/footer__logo.svg" alt="TETOTE RECRUITING"></a>
+            <div class="global-menu__header-buttons"><a href="./details.html">募集要項</a><a href="./entry.html">ENTRY</a></div>
+            <button class="global-menu__close" type="button" aria-label="メニューを閉じる"><span></span><span></span></button>
+        </div>
+        <div class="global-menu__content">
+            <img class="global-menu__center-logo" src="./img/footer__logo.svg" alt="TETOTE RECRUITING">
+            <div class="global-menu__panel">
+                <nav class="global-menu__nav" aria-label="メインメニュー">
+                    <a href="./about-us.html"><span>ABOUT US</span><small>TETOTEについて</small></a>
+                    <a href="./staff.html"><span>STAFF</span><small>社員について</small></a>
+                    <a href="./blog.html"><span>BLOG</span><small>採用ブログ</small></a>
+                    <a href="./benefits.html"><span>BENEFITS</span><small>福利厚生について</small></a>
+                    <a href="./career.html"><span>CARRER</span><small>研修制度とキャリアパス</small></a>
+                    <a href="./faq.html"><span>FAQ</span><small>よくある質問</small></a>
+                </nav>
+                <div class="global-menu__buttons"><a class="global-menu__requirements" href="./details.html">募集要項</a><a class="global-menu__entry" href="./entry.html">ENTRY</a></div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="breadcrumb breadcrumb--entry" aria-label="パンくずリスト"><ol><li><a href="./index.html">TOP</a></li><li>&gt;</li><li>ENTRY</li></ol></nav>
+
+    <main class="entry-main">
+        <section class="entry-form-section">
+            <div class="entry-form-section__heading">
+                <p>ENTRY FORM</p>
+                <h1><span>新卒・中途採用</span>エントリーフォーム</h1>
+                <p>当社へ入社をご希望の方は、下記の送信フォームより送信して下さい。<br><span>※</span>は必須項目になります。</p>
+            </div>
+
+            <form class="entry-form" action="#" method="post">
+                <div class="entry-form__row">
+                    <label for="entry-name">お名前<span>※</span></label>
+                    <input id="entry-name" name="your-name" type="text" placeholder="例：山田 太郎" autocomplete="name" required>
+                </div>
+                <div class="entry-form__row">
+                    <label for="entry-kana">フリガナ<span>※</span></label>
+                    <input id="entry-kana" name="your-kana" type="text" placeholder="例：ヤマダ タロウ" required>
+                </div>
+                <div class="entry-form__row">
+                    <label for="entry-email">メールアドレス<span>※</span></label>
+                    <input id="entry-email" name="your-email" type="email" placeholder="例：tetote@example.com" autocomplete="email" required>
+                </div>
+                <div class="entry-form__row">
+                    <label for="entry-tel">電話番号<span>※</span></label>
+                    <input id="entry-tel" name="your-tel" type="tel" placeholder="例：090-1234-5678" autocomplete="tel" required>
+                </div>
+                <div class="entry-form__row entry-form__birthday" role="group" aria-labelledby="entry-birthday-label">
+                    <p class="entry-form__label" id="entry-birthday-label">生年月日<span>※</span></p>
+                    <div class="entry-form__birthday-fields">
+                        <label><span class="visually-hidden">生まれた年</span><input name="birth-year" type="number" min="1900" max="2100" inputmode="numeric" placeholder="例：2000" required><span>年</span></label>
+                        <label><span class="visually-hidden">生まれた月</span><select name="birth-month" required><option value="">選択してください</option></select><span>月</span></label>
+                        <label><span class="visually-hidden">生まれた日</span><select name="birth-day" required><option value="">選択してください</option></select><span>日</span></label>
+                    </div>
+                </div>
+                <div class="entry-form__row entry-form__job" role="radiogroup" aria-labelledby="entry-job-label">
+                    <p class="entry-form__label" id="entry-job-label">希望職種<span>※</span></p>
+                    <div class="entry-form__radios">
+                        <label><input name="desired-job" type="radio" value="コンサルタント" required><span>コンサルタント</span></label>
+                        <label><input name="desired-job" type="radio" value="ソリューション営業"><span>ソリューション営業</span></label>
+                        <label><input name="desired-job" type="radio" value="システムエンジニア"><span>システムエンジニア</span></label>
+                    </div>
+                </div>
+                <div class="entry-form__row entry-form__message">
+                    <label for="entry-message">自己PR</label>
+                    <textarea id="entry-message" name="your-message" placeholder="例：志望動機、自己PR"></textarea>
+                </div>
+                <div class="entry-form__row entry-form__source" role="group" aria-labelledby="entry-source-label">
+                    <p class="entry-form__label" id="entry-source-label">当社を知ったきっかけを教えて下さい。</p>
+                    <div class="entry-form__checkboxes">
+                        <label><input name="source" type="checkbox" value="X（旧Twitter）" checked><span>X（旧Twitter）</span></label>
+                        <label><input name="source" type="checkbox" value="Facebook"><span>Facebook</span></label>
+                        <label><input name="source" type="checkbox" value="Instagram"><span>Instagram</span></label>
+                        <label><input name="source" type="checkbox" value="検索広告"><span>検索広告</span></label>
+                        <label><input name="source" type="checkbox" value="知人友人・親戚"><span>知人友人・親戚</span></label>
+                        <label><input name="source" type="checkbox" value="その他"><span>その他</span></label>
+                    </div>
+                </div>
+                <label class="entry-form__privacy"><input name="privacy" type="checkbox" required><span>個人情報保護方針に同意する</span></label>
+                <button class="entry-form__submit" type="submit" disabled>送信する</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="entry"><figure class="entry__img"><img src="./img/cta 1.jpg" alt=""></figure><div class="entry__card"><p>わたしたちと一緒に働く仲間を募集中です。<br>少数精鋭のチームで、<br>あなたも会社も一緒に成長していきましょう。</p><a href="./entry.html">ENTRY</a></div></section>
+        <div class="footer__content">
+            <nav class="footer__nav"><a href="./index.html">ホーム</a><a href="./about-us.html">TETOTEについて</a><a href="./staff.html">人を知る</a><a href="./career.html">研修制度とキャリアパス</a><a href="./benefits.html">福利厚生</a><a href="./blog.html">採用ブログ</a><a href="./details.html">募集要項</a><a href="./faq.html">よくある質問</a><a href="#">会社概要</a></nav>
+            <div class="footer__brand"><div class="footer__sns"><a href="#"><img src="./img/icon__FACEBOOK.svg" alt="Facebook"></a><a href="#"><img src="./img/icon__twitter.svg" alt="X"></a><a href="#"><img src="./img/icon__youtube.svg" alt="YouTube"></a></div><img class="footer__logo" src="./img/footer__logo.svg" alt="TETOTE RECRUITING"></div><small>© 2024 TETOTE All Right Reserved.</small>
+        </div>
+    </footer>
+    <script src="./common.js"></script>
+    <script src="./entry.js"></script>
+</body>
+</html>
