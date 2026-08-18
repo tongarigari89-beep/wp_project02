@@ -1,0 +1,146 @@
+html{
+    scroll-behavior: smooth;
+}
+.details-hero{
+    height: 339px;
+    margin-top: 118px;
+}
+.details-hero__inner{
+    position: relative;
+    width: 100%;
+    height: 339px;
+    background: url("./img/Details__Hero.jpg") center/cover no-repeat;
+}
+.details-hero__content{
+    position: absolute;
+    top: 75px;
+    left: max(24px,calc((100% - 976px)/2));
+}
+.details-hero h1{
+    display: table;
+    height: 70px;
+    padding: 3px 10px;
+    background: #FFFFFF;
+    font-family: Viga,sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 64px;
+}
+.details-hero__ja{
+    display: table;
+    height: 30px;
+    margin-top: 18px;
+    padding: 3px 10px;
+    background: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.details-hero__lead{
+    display: table;
+    height: 30px;
+    margin-top: 18px;
+    padding: 7px 10px;
+    background: #FFFFFF;
+    color: #988C2C;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 16px;
+}
+.details-main{
+    display: flex;
+    flex-direction: column;
+    width: 980px;
+    margin: 145px auto 139px;
+    /*padding: 145px 22px 0;*/
+    background: #FFFFFF;
+}
+.details-information,
+.details-job{
+    width: 980px;
+}
+.details-information{
+    height: 287px;
+}
+.details-information__text h2,
+.details-job h2{
+    height: 32px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.details-information__text p{
+    height: 16px;
+    margin-top: 113px;
+    font-size: 16px;
+    line-height: 16px;
+}
+.details-navigation{
+    display: flex;
+    gap: 49px;
+    width: 980px;
+    height: 56px;
+    margin-top: 70px;
+}
+.details-navigation a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 294px;
+    height: 56px;
+    border: 1px solid #222222;
+    border-radius: 40px;
+    background: #FAF7F1;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.details-navigation__label{
+    position: relative;
+}
+.details-navigation__label::after{
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px);
+    content: "↓";
+    font-size: 20px;
+    font-weight: 700;
+    transform: translateY(-50%);
+}
+.details-job{
+    scroll-margin-top: 118px;
+}
+.details-job--consultant{
+    margin-top: 97px;
+}
+.details-job--solution,
+.details-job--engineer{
+    margin-top: 88px;
+}
+.details-job__list{
+    width: 980px;
+    margin-top: 113px;
+}
+.details-job__item{
+    display: grid;
+    grid-template-columns: 231px 1fr;
+    width: 980px;
+    min-height: 52px;
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #222222;
+    font-size: 16px;
+    line-height: 16px;
+}
+.details-job__item:first-child{
+    min-height: 60px;
+}
+.details-job__item:last-child{
+    margin-bottom: 0;
+}
+.details-job__item dt{
+    font-weight: 700;
+}
+.details-job__item dd{
+    line-height: 1.5;
+}
