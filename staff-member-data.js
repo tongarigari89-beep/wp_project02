@@ -67,8 +67,8 @@ const member = staffMembers[memberId];
 
 if(member){
     document.body.classList.add(`staff-member--${memberId}`);
-    document.title = `${member.name} | TETOTE RECRUITING`;
-    document.querySelector('meta[name="description"]').content = `TETOTEで働く${member.position}、${member.name}のインタビューです。`;
+    document.title = `${member.name} | 株式会社TETOTE`;
+    document.querySelector('meta[name="description"]').content = `テクノロジーで社会課題を解決する、AIやビッグデータ分析などの技術を活用した社会課題解決サービスを提供するTETOTEの採用サイト。このページでは、${member.position}として働く${member.name}のインタビューを紹介しています。`;
     const messageLines = document.querySelectorAll(".staff-profile__message span");
     messageLines[0].textContent = member.message01;
     messageLines[1].textContent = member.message02;
