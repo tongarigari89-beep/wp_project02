@@ -108,3 +108,112 @@
     font-size: 16px;
     line-height: 1.8;
 }
+
+/* CAREERページ：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    /* SP・タブレット版：ヒーロー */
+    .career-hero{
+        height: 250px;
+        margin-top: 54px;
+    }
+    .career-hero__inner{
+        height: 250px;
+    }
+    .career-hero__content{
+        top: 52px;
+        left: 17px;
+        width: calc(100% - 34px);
+    }
+    .career-hero h1{
+        height: auto;
+        padding: 4px 8px;
+        font-size: 38px;
+        line-height: 1;
+    }
+    .career-hero__ja{
+        height: auto;
+        margin-top: 12px;
+        padding: 4px 8px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .career-hero__lead{
+        height: auto;
+        margin-top: 12px;
+        padding: 6px 8px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    /* SP・タブレット版：本文全体 */
+    .career-main{
+        width: 100%;
+        margin: 0;
+        padding: 70px 17px 90px;
+    }
+    .career-page-content{
+        width: 100%;
+    }
+    .career-page-content>h2{
+        height: auto;
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    /* SP・タブレット版：キャリアパス */
+    .career-path{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .career-path>p{
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .career-path>img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 980/734;
+        margin-top: 32px;
+        object-fit: contain;
+    }
+    .career-path .career-path__description{
+        margin-top: 30px;
+    }
+
+    /* SP・タブレット版：研修制度 */
+    .career-training{
+        gap: 40px;
+        width: 100%;
+        margin-top: 60px;
+    }
+    .career-training__item,
+    .career-training__item--large{
+        width: 100%;
+        height: auto;
+    }
+    .career-training__item h3{
+        width: 100%;
+        height: auto;
+        min-height: 48px;
+        padding: 10px 16px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .career-training__item p{
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 1.9;
+    }
+}
+/* CAREERページ：SP・タブレット版ここまで */
+
+/* CAREERページ：小さいSP版ここから */
+@media (max-width: 767px){
+    .career-page-content>h2{
+        font-size: 24px;
+    }
+    .career-training__item h3{
+        font-size: 18px;
+    }
+}
+/* CAREERページ：小さいSP版ここまで */

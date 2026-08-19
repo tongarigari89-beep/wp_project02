@@ -385,3 +385,198 @@ body.is-menu-open{
     text-align: left;
     white-space: nowrap;
 }
+
+/* 下層ページ共通：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    /* SP版：共通ヘッダー */
+    .sub-header{
+        height: 54px;
+    }
+    .sub-header__inner{
+        padding: 8px 12px;
+    }
+    .sub-header__logo{
+        width: 154px;
+        height: 38px;
+    }
+    .sub-header__actions{
+        gap: 0;
+    }
+    .sub-header__actions>a{
+        display: none;
+    }
+    .hamburger,
+    .hamburger img{
+        width: 32px;
+        height: 34px;
+    }
+
+    /* SP版：共通パンくずリスト */
+    .breadcrumb{
+        height: 50px;
+    }
+    .breadcrumb ol{
+        width: 100%;
+        height: 50px;
+        padding: 0 17px;
+        overflow: hidden;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    /* SP版：共通ドロワーメニュー */
+    .global-menu{
+        inset: 0;
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 0 12px;
+        overflow-y: auto;
+    }
+    .global-menu__header{
+        align-items: flex-start;
+        height: 91px;
+        padding-top: 8px;
+    }
+    .global-menu__logo{
+        width: 150px;
+        height: 40px;
+    }
+    .global-menu__header-buttons,
+    .global-menu__center-logo{
+        display: none;
+    }
+    .global-menu__content,
+    .global-menu__panel{
+        display: contents;
+    }
+    .global-menu__close{
+        width: 32px;
+        height: 46px;
+    }
+    .global-menu__close span{
+        top: 22px;
+        left: 0;
+        width: 32px;
+        height: 2px;
+    }
+    .global-menu__nav{
+        display: block;
+        width: 100%;
+    }
+    .global-menu__nav a{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 65px;
+        padding: 0;
+        border-top: 1px solid #AFA86F;
+    }
+    .global-menu__nav a:last-child{
+        border-bottom: 1px solid #AFA86F;
+    }
+    .global-menu__nav span{
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .global-menu__nav small{
+        margin-top: 9px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .global-menu__buttons{
+        flex-direction: column;
+        gap: 13px;
+        width: 248px;
+        margin-top: 52px;
+    }
+    .global-menu__buttons a{
+        width: 248px;
+        height: 42px;
+    }
+
+    /* SP版：共通CTA */
+    .footer{
+        height: auto;
+        padding-bottom: 24px;
+    }
+    .entry{
+        height: 368px;
+    }
+    .entry__img,
+    .entry__img img{
+        height: 250px;
+    }
+    .entry__card{
+        top: 132px;
+        width: calc(100% - 32px);
+        max-width: 480px;
+        height: 236px;
+        padding: 24px 15px 29px;
+        border-radius: 20px;
+    }
+    .entry__card p{
+        height: 105px;
+        font-size: 14px;
+        line-height: 2.15;
+    }
+    .entry__card a{
+        width: 200px;
+        height: 54px;
+        margin-top: 24px;
+    }
+
+    /* SP版：共通フッター */
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        width: 100%;
+        margin-top: 51px;
+        padding: 0;
+    }
+    .footer__nav{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 17px;
+        width: 100%;
+        height: 286px;
+        margin: 0 0 55px;
+        font-size: 14px;
+        line-height: 14px;
+        text-align: center;
+    }
+    .footer__nav::before{
+        display: none;
+    }
+    .footer__nav a:nth-child(n+6){
+        margin-top: 0;
+    }
+    .footer__brand{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 29px;
+        width: 250px;
+        height: 114px;
+        margin-bottom: 49px;
+    }
+    .footer__sns{
+        justify-self: auto;
+        justify-content: center;
+        transform: none;
+    }
+    .footer__logo{
+        width: 250px;
+        height: 61px;
+    }
+    .footer small{
+        width: 192px;
+        text-align: center;
+    }
+}
+/* 下層ページ共通：SP・タブレット版ここまで */

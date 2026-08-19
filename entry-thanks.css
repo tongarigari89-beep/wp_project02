@@ -28,3 +28,41 @@
     font-size: 16px;
     line-height: 1.8;
 }
+
+/* 送信完了ページ：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    .breadcrumb--entry-thanks{
+        margin-top: 54px;
+    }
+    .entry-thanks-main{
+        padding: 30px 17px 70px;
+    }
+    .entry-thanks-message{
+        width: 100%;
+        margin: 0;
+        padding: 58px 30px 70px;
+    }
+    .entry-thanks-message h1{
+        font-size: clamp(26px,4vw,32px);
+    }
+}
+
+@media (max-width: 767px){
+    .entry-thanks-main{
+        padding: 20px 17px 60px;
+    }
+    .entry-thanks-message{
+        padding: 50px 17px 59px;
+        border-radius: 8px;
+    }
+    .entry-thanks-message h1{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .entry-thanks-message p{
+        margin-top: 36px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+/* 送信完了ページ：SP・タブレット版ここまで */

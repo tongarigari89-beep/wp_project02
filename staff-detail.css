@@ -171,6 +171,31 @@
     height: 190px;
     margin-top: 23px;
 }
+
+/* 追加した5名：社員ごとの文章量に合わせてセクションの高さを調整 */
+body[class*="staff-member--"] .staff-interview,
+body[class*="staff-member--"] .staff-interview__article,
+body[class*="staff-member--"] .staff-interview__sidebar,
+body[class*="staff-member--"] .staff-interview__section,
+body[class*="staff-member--"] .staff-interview__section--work,
+body[class*="staff-member--"] .staff-interview__section--student,
+body[class*="staff-member--"] .staff-interview__section--reason,
+body[class*="staff-member--"] .staff-interview__section--reward,
+body[class*="staff-member--"] .staff-interview__section--person,
+body[class*="staff-member--"] .staff-interview__section--message{
+    height: auto;
+}
+body[class*="staff-member--"] .staff-interview__section{
+    margin-top: 23px;
+}
+body[class*="staff-member--"] .staff-interview__section:first-child{
+    margin-top: 0;
+}
+/* 橋本さん・青木さん：箇条書き部分だけ間隔を狭くする */
+.staff-member--hashimoto .staff-interview__duties p+p,
+.staff-member--aoki .staff-interview__duties p+p{
+    margin-top: 16px;
+}
 .staff-interview__sidebar{
     position: relative;
     width: 210px;
@@ -279,3 +304,273 @@
     font-weight: 700;
     line-height: 24px;
 }
+
+/* 社員詳細ページ：小さいPC版ここから */
+@media (min-width: 1024px) and (max-width: 1208px){
+    /* 小さいPC版：プロフィールを画面内に収める */
+    .staff-profile__inner{
+        width: calc(100% - 68px);
+        max-width: 976px;
+    }
+
+    /* 小さいPC版：インタビューと目次を画面内に収める */
+    .staff-interview{
+        grid-template-columns: minmax(0,1fr) 210px;
+        column-gap: 40px;
+        width: calc(100% - 34px);
+        height: auto;
+        margin: 0 auto;
+    }
+    .staff-interview__article{
+        width: 100%;
+        height: auto;
+    }
+    .staff-interview__section,
+    .staff-interview__section--work,
+    .staff-interview__section--student,
+    .staff-interview__section--reason,
+    .staff-interview__section--reward,
+    .staff-interview__section--person,
+    .staff-interview__section--message{
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+    }
+    .staff-interview__section:first-child{
+        margin-top: 0;
+    }
+    .staff-interview__sidebar{
+        height: auto;
+    }
+    .staff-interview__section-inner,
+    .staff-interview__section--work .staff-interview__section-inner{
+        width: calc(100% - 246px);
+    }
+
+    /* 小さいPC版：その他のメンバーを中央に配置 */
+    .related-staff,
+    .related-staff__list{
+        width: calc(100% - 34px);
+        max-width: 986px;
+    }
+    .related-staff__list{
+        grid-template-columns: repeat(3,minmax(0,300px));
+        justify-content: center;
+        column-gap: clamp(20px,3vw,43px);
+    }
+}
+/* 社員詳細ページ：小さいPC版ここまで */
+
+/* 社員詳細ページ：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    /* SP・タブレット版：プロフィール */
+    .staff-detail{
+        margin-top: 54px;
+    }
+    .staff-profile{
+        padding: 45px 17px 55px;
+    }
+    .staff-profile__inner{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .staff-profile__content{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+    .staff-profile__message{
+        gap: 10px;
+        height: auto;
+    }
+    .staff-profile__message span{
+        max-width: 100%;
+        white-space: normal;
+    }
+    .staff-profile__message span:first-child{
+        height: auto;
+        padding: 5px 8px;
+        font-size: clamp(23px,4vw,32px);
+        line-height: 1.3;
+    }
+    .staff-profile__message span:last-child{
+        height: auto;
+        padding: 5px 8px;
+        font-size: clamp(18px,3vw,24px);
+        line-height: 1.3;
+    }
+    .staff-profile__information{
+        width: 100%;
+        height: auto;
+        margin-top: 28px;
+    }
+    .staff-profile__identity{
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        width: 100%;
+        height: auto;
+    }
+    .staff-profile__identity h1{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    .staff-profile__identity p{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    .staff-profile__biography{
+        width: 100%;
+        height: auto;
+        margin-top: 22px;
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .staff-profile__photo{
+        width: min(100%,420px);
+        height: auto;
+        margin: 35px auto 0;
+    }
+    .staff-profile__photo img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 286/368;
+        object-fit: cover;
+    }
+
+    /* SP・タブレット版：インタビュー本文 */
+    .staff-detail__content{
+        padding: 75px 17px 90px;
+    }
+    .staff-interview{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .staff-interview__article{
+        width: 100%;
+        height: auto;
+    }
+    .staff-interview__section,
+    .staff-interview__section--work,
+    .staff-interview__section--student,
+    .staff-interview__section--reason,
+    .staff-interview__section--reward,
+    .staff-interview__section--person,
+    .staff-interview__section--message{
+        width: 100%;
+        height: auto;
+        margin-top: 70px;
+        scroll-margin-top: 80px;
+    }
+    .staff-interview__section:first-child{
+        margin-top: 0;
+    }
+    .staff-interview__section::before{
+        top: 14px;
+        left: 0;
+        width: 42px;
+        transform: none;
+    }
+    .staff-interview__section-inner,
+    .staff-interview__section--work .staff-interview__section-inner{
+        width: 100%;
+        margin-left: 0;
+    }
+    .staff-interview__section h2{
+        width: 100%;
+        height: auto;
+        padding-left: 57px;
+        font-size: 21px;
+        line-height: 1.45;
+    }
+    .staff-interview__intro,
+    .staff-interview__answer{
+        margin-top: 32px;
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .staff-interview__duties{
+        margin-top: 24px;
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .staff-interview__duties p+p{
+        margin-top: 22px;
+    }
+
+    /* SP・タブレット版：PC専用追従目次 */
+    .staff-interview__sidebar{
+        display: none;
+    }
+
+    /* SP・タブレット版：その他のメンバー */
+    .related-staff{
+        width: 100%;
+        height: auto;
+        margin: 90px 0 0;
+    }
+    .related-staff>h2{
+        height: auto;
+        font-size: 26px;
+        line-height: 1.5;
+    }
+    .related-staff__list{
+        grid-template-columns: repeat(2,minmax(0,300px));
+        justify-content: center;
+        column-gap: clamp(15px,5vw,43px);
+        row-gap: 44px;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+    .related-staff__card{
+        width: 100%;
+        height: auto;
+    }
+    .related-staff__visual{
+        width: 100%;
+        height: auto;
+        padding-bottom: 18px;
+    }
+    .related-staff__visual>img{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 300/379;
+        border-radius: clamp(16px,4vw,30px);
+        object-fit: cover;
+    }
+    .related-staff__visual>p{
+        top: auto;
+        bottom: 0;
+        gap: 5px;
+        max-width: 100%;
+        font-size: clamp(9px,2.7vw,20px);
+        line-height: 1.3;
+    }
+    .related-staff__visual>p span{
+        max-width: 100%;
+        min-height: 0;
+        padding: 4px 5px;
+        white-space: normal;
+    }
+    .related-staff__profile{
+        margin-top: 12px;
+    }
+    .related-staff__profile p{
+        flex-wrap: wrap;
+        gap: 5px 7px;
+        height: auto;
+        font-size: clamp(10px,2.2vw,16px);
+        line-height: 1.4;
+        white-space: normal;
+    }
+    .related-staff__profile h3{
+        margin-top: 10px;
+        font-size: clamp(18px,3vw,24px);
+        line-height: 1.3;
+    }
+}
+/* 社員詳細ページ：SP・タブレット版ここまで */

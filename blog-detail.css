@@ -138,3 +138,110 @@
 .post-navigation__item--next .post-navigation__arrow::before{
     transform: translate(-65%,-50%) rotate(45deg);
 }
+
+/* ブログ詳細ページ：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    /* SP・タブレット版：固定ヘッダー下の余白 */
+    .blog-detail__header-space{
+        height: 54px;
+    }
+
+    /* SP・タブレット版：記事全体 */
+    .blog-detail-main{
+        padding: 34px 17px 90px;
+    }
+    .blog-article{
+        width: 100%;
+        max-width: 800px;
+        padding: 35px clamp(20px,5vw,40px) 35px;
+    }
+    .blog-article__header{
+        width: 100%;
+    }
+    .blog-article__meta{
+        flex-wrap: wrap;
+        gap: 10px 19px;
+    }
+    .blog-article__header h1{
+        margin-top: 22px;
+        font-size: clamp(24px,4vw,32px);
+        line-height: 1.5;
+    }
+    .blog-article__main-image{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 720/411;
+        margin-top: 32px;
+        object-fit: cover;
+    }
+    .blog-article__content{
+        width: 100%;
+        margin-top: 35px;
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .blog-article__content h2{
+        margin-top: 38px;
+        font-size: 21px;
+        line-height: 1.5;
+    }
+    .blog-article__content p,
+    .blog-article__content ul{
+        margin-top: 28px;
+    }
+    .blog-article__content>p:first-child{
+        margin-top: 0;
+    }
+
+    /* SP・タブレット版：前後の記事 */
+    .post-navigation{
+        height: auto;
+    }
+    .post-navigation__inner{
+        width: 100%;
+        height: auto;
+        padding: 0 17px;
+    }
+    .post-navigation__item{
+        gap: 12px;
+        min-width: 0;
+        height: auto;
+        min-height: 110px;
+        margin-top: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .post-navigation__item--previous{
+        padding-left: 0;
+        padding-right: 14px;
+    }
+    .post-navigation__item--next{
+        padding-right: 0;
+        padding-left: 14px;
+    }
+    .post-navigation__content{
+        min-width: 0;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}
+/* ブログ詳細ページ：SP・タブレット版ここまで */
+
+/* ブログ詳細ページ：小さいSP版ここから */
+@media (max-width: 767px){
+    .post-navigation__inner{
+        grid-template-columns: 1fr;
+    }
+    .post-navigation__item{
+        min-height: 88px;
+    }
+    .post-navigation__item--previous{
+        padding-right: 0;
+        border-right: 0;
+        border-bottom: 1px solid #222222;
+    }
+    .post-navigation__item--next{
+        padding-left: 0;
+    }
+}
+/* ブログ詳細ページ：小さいSP版ここまで */

@@ -130,3 +130,132 @@
     margin-top: 36px;
     object-fit: cover;
 }
+
+/* BENEFITSページ：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    /* SP・タブレット版：ヒーロー */
+    .benefits-hero{
+        height: 250px;
+        margin-top: 54px;
+    }
+    .benefits-hero__inner{
+        height: 250px;
+    }
+    .benefits-hero__content{
+        top: 52px;
+        left: 17px;
+        width: calc(100% - 34px);
+    }
+    .benefits-hero h1{
+        height: auto;
+        padding: 4px 8px;
+        font-size: 38px;
+        line-height: 1;
+    }
+    .benefits-hero__ja{
+        height: auto;
+        margin-top: 12px;
+        padding: 4px 8px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .benefits-hero__lead{
+        height: auto;
+        margin-top: 12px;
+        padding: 6px 8px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    /* SP・タブレット版：本文全体 */
+    .benefits-main{
+        width: 100%;
+        margin: 0;
+        padding: 70px 17px 90px;
+    }
+    .benefits-system,
+    .benefits-voices{
+        width: 100%;
+    }
+    .benefits-system h2,
+    .benefits-voices h2{
+        height: auto;
+        font-size: 26px;
+        line-height: 1.5;
+    }
+
+    /* SP・タブレット版：各種制度 */
+    .benefits-system__list{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .benefits-system__row,
+    .benefits-system__row:first-child,
+    .benefits-system__row:nth-child(2),
+    .benefits-system__row:nth-child(3),
+    .benefits-system__row:nth-child(4),
+    .benefits-system__row:nth-child(5){
+        grid-template-columns: 130px minmax(0,1fr);
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 25px 0;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .benefits-system__row:first-child{
+        padding-top: 0;
+    }
+    .benefits-system__row dd{
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    /* SP・タブレット版：制度利用者の声 */
+    .benefits-voices{
+        margin-top: 85px;
+    }
+    .benefits-voices__list{
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        gap: 40px 30px;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .benefits-voice{
+        width: 100%;
+        height: auto;
+    }
+    .benefits-voice h3{
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    .benefits-voice__text{
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .benefits-voices__image{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 980/560;
+        margin-top: 45px;
+        object-fit: cover;
+    }
+}
+/* BENEFITSページ：SP・タブレット版ここまで */
+
+/* BENEFITSページ：小さいSP版ここから */
+@media (max-width: 767px){
+    .benefits-system__row,
+    .benefits-system__row:first-child,
+    .benefits-system__row:nth-child(2),
+    .benefits-system__row:nth-child(3),
+    .benefits-system__row:nth-child(4),
+    .benefits-system__row:nth-child(5){
+        grid-template-columns: 90px minmax(0,1fr);
+    }
+    .benefits-voices__list{
+        grid-template-columns: 1fr;
+    }
+}
+/* BENEFITSページ：小さいSP版ここまで */

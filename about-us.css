@@ -242,3 +242,224 @@
 .company__row dt{
     font-weight: 700;
 }
+
+/* ABOUT USページ：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    /* SP版：ヒーロー */
+    .about-hero{
+        height: 250px;
+        margin-top: 54px;
+        background-position: center;
+    }
+    .about-hero__inner{
+        width: 100%;
+        height: 250px;
+        padding: 52px 17px 0;
+    }
+    .about-hero h1{
+        padding: 4px 8px;
+        font-size: 38px;
+        line-height: 1;
+    }
+    .about-hero__ja{
+        margin-top: 12px;
+        padding: 4px 8px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .about-hero__lead{
+        margin-top: 12px;
+        padding: 6px 8px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    /* SP版：本文全体・共通見出し */
+    .about-main{
+        width: 100%;
+        margin: 0;
+        padding: 55px 17px 90px;
+    }
+    .about-heading{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    /* SP版：大切にしていること */
+    .values{
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .values__list{
+        gap: 20px;
+        margin-top: 40px;
+    }
+    .values__item{
+        height: auto;
+        padding: 24px 18px;
+    }
+    .values__title{
+        align-items: flex-start;
+        gap: 14px;
+        height: auto;
+    }
+    .values__number{
+        flex: 0 0 40px;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .values__title h3{
+        padding-top: 5px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+    .values__item>p{
+        width: 100%;
+        margin-top: 18px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* SP版：代表メッセージ */
+    .message{
+        width: 100%;
+        height: auto;
+        margin: 80px 0 0;
+    }
+    .message__content{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-top: 40px;
+    }
+    .message__photo{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 484/629;
+        object-fit: cover;
+    }
+    .message__body{
+        width: 100%;
+        height: auto;
+        margin: -38px 0 0;
+        padding: 0;
+    }
+    .message__catch{
+        position: relative;
+        top: auto;
+        left: auto;
+        width: calc(100% - 20px);
+        padding: 14px 10px;
+        background: #FFFFFF;
+        font-size: 21px;
+        line-height: 1.5;
+    }
+    .message__text{
+        width: 100%;
+        margin-top: 32px;
+        font-size: 14px;
+        line-height: 1.9;
+    }
+    .message__text p+p{
+        margin-top: 24px;
+    }
+    .message__body>.message__signature{
+        position: static;
+        display: block;
+        width: 185px;
+        height: 35px;
+        margin: 25px 0 0 auto;
+    }
+
+    /* SP版：事業紹介 */
+    .business{
+        width: 100%;
+        height: auto;
+        margin-top: 80px;
+    }
+    .business__intro{
+        width: 100%;
+        margin-top: 28px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .business__intro br{
+        display: none;
+    }
+    .business__list{
+        gap: 40px;
+        margin-top: 40px;
+    }
+    .business__item{
+        display: block;
+        min-height: 0;
+        padding-left: 0;
+    }
+    .business__item+.business__item{
+        padding-top: 40px;
+    }
+    .business__item img{
+        width: 100%;
+        height: 220px;
+        border-radius: 15px;
+    }
+    .business__content,
+    .business__item:nth-child(3) .business__content{
+        padding-top: 22px;
+    }
+    .business__content h3{
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .business__catch{
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+    }
+    .business__catch br{
+        display: none;
+    }
+    .business__description{
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* SP版：会社概要 */
+    .company{
+        width: 100%;
+        margin: 80px 0 0;
+    }
+    .company__list{
+        width: 100%;
+        margin-top: 40px;
+    }
+    .company__row{
+        grid-template-columns: 90px minmax(0,1fr);
+        min-height: 0;
+        padding: 20px 0;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .company__row:first-child{
+        min-height: 0;
+        padding-top: 0;
+    }
+    .company__row dd{
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+}
+/* ABOUT USページ：SP・タブレット版ここまで */
+
+/* ABOUT USページ：小さいSP画面の画像調整ここから */
+@media (max-width: 767px){
+    .business__item img{
+        height: auto;
+        aspect-ratio: auto;
+        object-fit: contain;
+    }
+}
+/* ABOUT USページ：小さいSP画面の画像調整ここまで */

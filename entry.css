@@ -228,3 +228,115 @@
     white-space: nowrap;
     border: 0;
 }
+
+/* エントリーフォームページ：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    .breadcrumb--entry{
+        margin-top: 54px;
+    }
+    .entry-main{
+        padding: 30px 17px 70px;
+    }
+    .entry-form-section{
+        width: 100%;
+        margin: 0;
+        padding: 50px clamp(30px,7vw,71px) 70px;
+    }
+    .entry-form-section__heading h1{
+        font-size: clamp(26px,4vw,32px);
+    }
+    .entry-form-section__heading > p:last-child{
+        max-width: 100%;
+    }
+    .entry-form{
+        margin-top: 70px;
+        padding-top: 70px;
+    }
+    .entry-form__birthday-fields{
+        grid-template-columns: repeat(2,minmax(0,196px));
+    }
+}
+
+@media (max-width: 767px){
+    .entry-main{
+        padding: 20px 17px 60px;
+    }
+    .entry-form-section{
+        padding: 42px 17px 55px;
+        border-radius: 8px;
+    }
+    .entry-form-section__heading > p:first-child{
+        font-size: 18px;
+    }
+    .entry-form-section__heading h1{
+        margin-top: 22px;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+    .entry-form-section__heading > p:last-child{
+        margin-top: 35px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+    .entry-form{
+        margin-top: 55px;
+        padding-top: 55px;
+    }
+    .entry-form__row{
+        grid-template-columns: minmax(0,1fr);
+        gap: 12px;
+        margin-top: 24px;
+    }
+    .entry-form__row > label,
+    .entry-form__row > legend,
+    .entry-form__label{
+        padding-top: 0;
+        font-size: 15px;
+    }
+    .entry-form__birthday-fields{
+        grid-template-columns: minmax(0,1fr);
+        gap: 12px;
+    }
+    .entry-form__birthday-fields label:first-child{
+        grid-column: auto;
+    }
+    .entry-form__birthday-fields label{
+        width: 100%;
+    }
+    .entry-form__birthday-fields input,
+    .entry-form__birthday-fields select{
+        width: min(168px,calc(100% - 28px));
+    }
+    .entry-form__message textarea{
+        height: 200px;
+    }
+    .entry-form__source{
+        margin-top: 38px;
+    }
+    .entry-form__source .entry-form__label{
+        width: 100%;
+        line-height: 1.6;
+    }
+    .entry-form__source .entry-form__label br{
+        display: none;
+    }
+    .entry-form__radios,
+    .entry-form__checkboxes{
+        padding-top: 0;
+    }
+    .entry-form__privacy{
+        align-items: flex-start;
+        margin-top: 50px;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+    .entry-form__privacy input{
+        flex: 0 0 auto;
+        margin-top: 1px;
+    }
+    .entry-form__submit{
+        width: min(256px,100%);
+        margin-top: 40px;
+    }
+}
+/* エントリーフォームページ：SP・タブレット版ここまで */

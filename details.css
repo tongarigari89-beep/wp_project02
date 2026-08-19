@@ -144,3 +144,135 @@ html{
 .details-job__item dd{
     line-height: 1.5;
 }
+
+/* DETAILSページ：SP・タブレット版ここから */
+@media (max-width: 1023px){
+    /* SP・タブレット版：ヒーロー */
+    .details-hero{
+        height: 250px;
+        margin-top: 54px;
+    }
+    .details-hero__inner{
+        height: 250px;
+    }
+    .details-hero__content{
+        top: 52px;
+        left: 17px;
+        width: calc(100% - 34px);
+    }
+    .details-hero h1{
+        height: auto;
+        padding: 4px 8px;
+        font-size: 38px;
+        line-height: 1;
+    }
+    .details-hero__ja{
+        height: auto;
+        margin-top: 12px;
+        padding: 4px 8px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    .details-hero__lead{
+        height: auto;
+        margin-top: 12px;
+        padding: 6px 8px;
+        font-size: 13px;
+        line-height: 1.2;
+    }
+
+    /* SP・タブレット版：本文全体 */
+    .details-main{
+        width: 100%;
+        margin: 0;
+        padding: 70px 17px 90px;
+    }
+    .details-information,
+    .details-job{
+        width: 100%;
+        height: auto;
+    }
+    .details-information__text h2,
+    .details-job h2{
+        height: auto;
+        font-size: 26px;
+        line-height: 1.5;
+    }
+    .details-information__text p{
+        height: auto;
+        margin-top: 35px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    /* SP・タブレット版：職種ボタン */
+    .details-navigation{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        gap: 18px;
+        width: 100%;
+        height: auto;
+        margin-top: 45px;
+    }
+    .details-navigation a{
+        width: 100%;
+        height: 52px;
+        padding: 0 25px 0 12px;
+        font-size: clamp(14px,2vw,18px);
+        line-height: 1.3;
+        text-align: center;
+    }
+    .details-navigation__label::after{
+        left: calc(100% + 7px);
+        font-size: 18px;
+    }
+
+    /* SP・タブレット版：募集要項 */
+    .details-job{
+        scroll-margin-top: 70px;
+    }
+    .details-job--consultant,
+    .details-job--solution,
+    .details-job--engineer{
+        margin-top: 85px;
+    }
+    .details-job__list{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .details-job__item,
+    .details-job__item:first-child{
+        grid-template-columns: 180px minmax(0,1fr);
+        width: 100%;
+        min-height: 0;
+        margin-bottom: 0;
+        padding: 25px 0;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .details-job__item dd{
+        min-width: 0;
+        line-height: 1.7;
+        overflow-wrap: anywhere;
+    }
+}
+/* DETAILSページ：SP・タブレット版ここまで */
+
+/* DETAILSページ：小さいSP版ここから */
+@media (max-width: 767px){
+    .details-navigation{
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .details-navigation a{
+        font-size: 16px;
+    }
+    .details-job__item,
+    .details-job__item:first-child{
+        grid-template-columns: 100px minmax(0,1fr);
+    }
+    .details-job h2{
+        font-size: 23px;
+    }
+}
+/* DETAILSページ：小さいSP版ここまで */
